@@ -1,0 +1,1459 @@
+/*--------------------偵錯用------------------*/
+* {
+  /*outline:1px solid #00F;*/
+}
+
+.transparency {
+  opacity: 1;
+}
+
+/*-------------more 區域----------*/
+.more {
+  width: 96px;
+  height: 30px;
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid #5AC8F4;
+  /*border-right: 15px solid white;*/
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.more-line {
+  width: 72px;
+  height: 2px;
+  background-color: #5AC8F4;
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+  top: 50%;
+}
+
+.more-line:before {
+  content: "";
+  width: 54px;
+  height: 2px;
+  background-color: #5AC8F4;
+  transform: rotate(61deg);
+  position: absolute;
+  top: -24px;
+  left: -39px;
+}
+
+/*------------- loading ------------*/
+body .loading-area-1 {
+  padding-top: 30px;
+}
+
+.loading {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid #5AC8F4;
+  /*border-right: 15px solid white;*/
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.loading-line {
+  width: 108px;
+  height: 2px;
+  background-color: #5AC8F4;
+  position: absolute;
+  bottom: 16px;
+  right: 118px;
+}
+
+.loading-line:before {
+  content: "";
+  width: 54px;
+  height: 2px;
+  background-color: #5AC8F4;
+  transform: rotate(61deg);
+  position: absolute;
+  top: -24px;
+  left: -39px;
+}
+
+
+/*------------- dailylife mroe ------------*/
+.dailylife-more-line {
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding-left: 90px;
+  position: relative;
+}
+
+.item-travel-content h1 {
+  font-size: 24px;
+}
+
+.travel-cover-p p {
+  font-size: 12px;
+}
+
+.dailylife-item-more {
+  margin-bottom: 52px;
+}
+
+
+/*----------------共用區塊------------------*/
+/*------------- NewWork-area ------------*/
+.col-newwork-area {
+  padding: 0;
+}
+
+.item-note-1 {
+  padding-top: 20px;
+}
+
+.item-founder-1 {
+  text-align: right;
+  width: 80px;
+  max-height: 90px;
+}
+
+.item-founder-1 img {
+  width: 100%;
+}
+
+.title-newwork {
+  padding-top: 16px;
+}
+
+.newwork-area .note {
+  line-height: 1.5;
+}
+
+.title-newwork h1 {
+  border-bottom: 1px solid #000;
+}
+
+.col-Carousel {
+  padding: 0;
+}
+
+/*------------- dailylife-area ------------*/
+.col-dailylife-area {
+  padding: 0;
+}
+
+.item-note-2 {
+  padding-top: 48px;
+}
+
+.item-founder-2 {
+  text-align: center;
+  max-height: 120px;
+}
+
+.item-founder-2 img {
+  width: 100%;
+}
+
+.title-dailylife {
+  padding-top: 16px;
+}
+
+.dailylife-area .note {
+  line-height: 1.5;
+}
+
+.title-dailylife h1 {
+  border-bottom: 1px solid #000;
+  padding-top: 28px;
+  text-align: right;
+}
+
+.col-Carousel {
+  padding: 0;
+}
+
+/*------------- dailylife-photo area ------------*/
+.dailylife-item-photo {
+  box-shadow: 0px 0px 1px #000;
+  /*max-height: 230px; */
+  position: relative;
+}
+
+.dailylife-item-photo img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.dailylife-photo {
+  padding: 20px 0;
+}
+
+.dailylife-photo1 {
+  padding-top: 0px;
+}
+
+/*----- dailylife-photo photo-parts ------*/
+.dailylife-photo .photo-parts {
+  position: absolute;
+  /*bottom: 0%;*/
+  bottom: -100%;
+  transition: .7s;
+  width: 100%;
+  height: 22%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, .2) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  /*background-image:linear-gradient(90deg, rgba(0,0,0,0) 0%,
+                                           rgba(0,0,0,.8) 50%, 
+                                           rgba(0,0,0,0) 100%);*/
+  padding: 0px 6px;
+  box-sizing: border-box;
+  display: flex;
+  /*justify-content:space-between;*/
+  align-items: center;
+}
+
+.dailylife-photo .author-hp,
+.dailylife-photo .item-cart img,
+.dailylife-photo .item-like img {
+  width: 30px;
+  height: 30px;
+}
+
+.dailylife-photo .item-icon-like-1,
+.dailylife-photo .item-icon-cart-1 {
+  opacity: 0;
+}
+
+.dailylife-photo .author-hp-name p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  opacity: .7;
+}
+
+.dailylife-photo .author-hp-name,
+.dailylife-photo .item-cart,
+.dailylife-photo .item-like {
+  padding-left: 5px;
+}
+
+.dailylife-photo .item-like {
+  cursor: pointer;
+}
+
+.dailylife-photo .author-hp img {
+  border-radius: 999px;
+}
+
+.dailylife-photo .photo-part .item-icon-cart,
+.dailylife-photo .photo-part .item-icon-like {
+  position: absolute;
+  bottom: 0;
+}
+
+.dailylife-photo .photo-other-parts {
+  display: flex;
+}
+
+.dailylife-photo .photo-parts .item-cart,
+.dailylife-photo .photo-parts .item-like {
+  position: relative;
+}
+
+.space-grow {
+  flex-grow: 1;
+}
+
+
+
+/*------------- About Us area ------------*/
+.title-3 {
+  text-indent: 4px;
+}
+
+.title-aboutus h1 {
+  border-bottom: 1px solid #000;
+}
+
+.aboutus-addr {
+  padding-top: 120px;
+}
+
+.aboutus-addr p {}
+
+.aboutus-area,
+.col-aboutus-area {
+  padding: 0;
+}
+
+.aboutus-addr-p {
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: pre-line;
+  /*color:  #5AC8F4;*/
+  opacity: 1;
+}
+
+.aboutus-content-p {
+  font-size: 18px;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.aboutus-content .copyright {
+  opacity: 1;
+  font-size: 12px;
+  color: #5AC8F4;
+}
+
+.aboutus-content {
+  margin-bottom: 30px;
+}
+
+/*-------- About Us content --------*/
+.icon-group {
+  width: 60px;
+  padding: 5px;
+}
+
+.icon-group-fx {
+  width: 60px;
+  padding: 5px;
+}
+
+.href-icon {
+  position: relative;
+}
+
+.icon-group-fx {
+  position: absolute;
+  opacity: 0;
+}
+
+/*--------------------- Gallery area ------------------*/
+/* .gallery-ptohotype-area .item-decoration_3 {
+  height: 1400px;
+  width: 1400px;
+  left: -1000px;
+} */
+
+#bgc-gallery {
+  background-image: url("../images/bgc-960x1950-white-1.png");
+  background-position: -20% 7%;
+  background-size: contain;
+}
+.bgi-gallery-white {
+  max-width: 1200px;
+  margin: auto;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+  /*border-top: 1px solid #000;*/
+
+  /*box-shadow: 0px 1px 2px #000;*/
+  margin-bottom: 20px;
+}
+
+.col-gallery-photo {
+  padding: 10px 20px;
+}
+
+/*---------gallery-title-area--------*/
+.item-decoration {
+  position: absolute;
+}
+
+.gallery-title-area {
+  padding-bottom: 10px;
+}
+
+.gallery-title-area p {
+  font-size: 18px;
+}
+
+
+/*---------gallery-ptohotype-area--------*/
+.item-gallery {
+  position: relative;
+  opacity: .5;
+}
+
+.item-gallery img {
+  width: 100%;
+}
+
+.gallery-ptohotype-area p {
+  font-size: 36px;
+  color: #fff;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.gallery-ptohotype-area .phototype-p {
+  position: absolute;
+  margin: auto;
+
+  bottom: 20px;
+  left: 25%;
+  right: 25%;
+  font-size: 36px;
+}
+
+/*-------------gallery-select---------------*/
+.col-gallery-select {
+  /*padding: 0;*/
+}
+
+
+.item-gallery-select {
+  padding-top: 30px;
+  padding-left: 1px;
+  /*padding-bottom: 10px;*/
+  display: flex;
+}
+
+.gallery-ptohotype-area {
+  box-shadow: rgb(0 0 0) 0px 1px 2px;
+}
+
+.select-group {
+  position: relative;
+  /* bottom: -5px; */
+  /* border-radius: 5px; */
+  padding: 10px;
+  /* border: 1px solid #5AC8F4; */
+  border-bottom-width: 0;
+  box-shadow: -2px -1px 2px 0px #aaa;
+  border-right: 1px solid #ccc;
+
+}
+
+.select-upcoming {
+  /*box-shadow: 0 1px 1px #000; */
+  margin-left: 5px;
+}
+
+.select-popular {
+  /*box-shadow: 1px 0px 1px #000; */
+}
+
+/*--- gallery-ptohotype-area---*/
+.item-gallery-ptoho {
+  /*padding-bottom: 100%;*/
+  border: 2px solid #fff;
+  position: relative;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .7);
+}
+
+.item-gallery-ptoho img {
+  height: 100%;
+  width: 100%;
+  /*position: absolute;*/
+  vertical-align: top;
+}
+
+.gallery-ptohotype-area {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*----- gallery-ptohotype-area photo-parts ------*/
+.gallery-ptohotype-area .photo-parts {
+  position: absolute;
+  /*bottom: 0%;*/
+  bottom: -100%;
+  transition: .7s;
+  width: 100%;
+  height: 20%;
+  /*background-color: #ff0;*/
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, .2) 50%,
+      rgba(0, 0, 0, 0) 100%);
+  /*background-image:linear-gradient(90deg, rgba(0,0,0,0) 0%,
+                                           rgba(0,0,0,.8) 50%, 
+                                           rgba(0,0,0,0) 100%);*/
+  padding: 0px 6px;
+  box-sizing: border-box;
+  display: flex;
+  /*justify-content:space-between;*/
+  align-items: center;
+}
+
+.gallery-ptohotype-area .item-cart,
+.gallery-ptohotype-area .item-like {
+  margin-right: 10px;
+}
+.gallery-ptohotype-area .author-hp {
+  width: 30px;
+  height: 30px;
+}
+.gallery-ptohotype-area .item-cart img,
+.gallery-ptohotype-area .item-like img {
+  width: 24px;
+  height: 24px;
+}
+
+.gallery-ptohotype-area .item-icon-like-1,
+.gallery-ptohotype-area .item-icon-cart-1 {
+  /* position: absolute; */
+  opacity: 0;
+}
+
+.gallery-ptohotype-area .author-hp-name p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  opacity: .7;
+}
+
+.gallery-ptohotype-area .author-hp-name,
+.gallery-ptohotype-area .item-cart,
+.gallery-ptohotype-area .item-like {
+  padding-left: 5px;
+}
+
+.gallery-ptohotype-area .item-like {
+  cursor: pointer;
+}
+
+.gallery-ptohotype-area .author-hp img {
+  border-radius: 999px;
+}
+
+.gallery-ptohotype-area .photo-parts .item-icon-cart,
+.gallery-ptohotype-area .photo-parts .item-icon-like {
+  position: absolute;
+  bottom: 0;
+}
+
+.gallery-ptohotype-area .photo-other-parts {
+  display: flex;
+}
+
+.gallery-ptohotype-area .photo-parts .item-cart,
+.gallery-ptohotype-area .photo-parts .item-like {
+  position: relative;
+}
+
+.space-grow {
+  flex-grow: 1;
+}
+
+
+
+
+
+
+/*-!!!!!!!!----------Travel AREA-----------*/
+
+/*----------travel-cover*/
+
+.item-travel-content p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.travel-cover-p {
+  padding-top: 10px;
+}
+
+.item-blog-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-blog-select ul {
+  font-size: 0;
+  padding: 10px;
+}
+
+.travel-cover-p .kp {
+  opacity: 1;
+}
+
+.travel-cover-p p {
+  opacity: .5;
+  color: #fff;
+}
+
+.item-travel-content h1 {
+  color: #fff;
+  opacity: 1;
+}
+
+.item-blog-select li {
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.item-blog-select li+li {
+  border-left: 1px solid #aaa;
+}
+
+.travelblog-content-p {
+  display: block;
+  text-align: left;
+}
+
+.travel-more {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  height: 26px;
+}
+
+.travel-more:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 1px dashed #5AC8F4;
+  width: calc(100% - 52px);
+  top: 13px;
+  transform: translateY(-50%);
+}
+
+.travel-a-more {
+  position: absolute;
+  /*position: relative;*/
+  right: 0;
+  width: 50px;
+  border: 1px solid #5AC8F4;
+  border-radius: 8px;
+  /*vertical-align: middle;*/
+  text-align: center;
+  /*margin-top: 4px;*/
+  display: block;
+}
+
+
+
+/*<!-- --------------- blog-start -------------- -->*/
+.item-travelblog img {
+  /*width: 400px;*/
+  width: 100%;
+}
+
+.item-travelblog {
+  position: relative;
+}
+
+.travelblog-photo {
+  transition: .7s;
+}
+
+.col-travelblog {
+  /* display: flex;*/
+  padding: 10px;
+  margin: 5px;
+  overflow: none;
+}
+
+.item-travelblog-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*letter-spacing: 1px;*/
+  padding: 0 10px;
+  /*height: 300px;*/
+  line-height: 1.5;
+}
+
+.item-travelblog-content p {
+  font-size: 16px;
+}
+
+.container-page-btn {
+  /* margin-bottom: 20px; */
+  margin: 20px auto;
+}
+
+
+.item-page-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.attraction a {
+  color: #000;
+}
+
+
+
+
+/*-!!!!!!!!----------LOGIN AREA-----------*/
+.login-area {
+  /* padding-top: 90px; */
+  /* padding-bottom: 10px;   */
+  height: 100vh;
+  width: 100%;
+  /* width: 100vw; */
+  background-image: url("../images/login-bgc.jpg");
+  /* background-image: url("../images/bgc-black-2.jpg"); */
+  /* background-attachment: fixed; */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+
+.login-area h3 {
+  font-weight: 0;
+}
+
+.item-login {
+  box-shadow: 0 0 1px #000;
+  background-color: rgba(255, 255, 255, .9);
+  /* max-width: 600px; */
+  /* margin: auto; */
+  margin: auto 15px;
+}
+
+#login-center {
+  position: absolute;
+  padding: 0;
+}
+
+form {
+  padding: 10px;
+}
+
+.form-rememberme {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+[class^=form-] {
+  padding-top: 16px;
+}
+
+[class^=input-infn-] {
+  padding-top: 4px;
+}
+
+input::-webkit-input-placeholder {
+  opacity: .3;
+  font-size: 12px;
+}
+
+.item-login input {
+  border: 1px solid #555;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.item-login input:active,
+.item-login input:focus {
+  border-color: #7EFFFF;
+}
+
+
+.item-login .form-rememberme input {
+  width: 16px;
+}
+
+.form-rememberme input[type="checkbox"] {
+  margin: 0;
+}
+
+.form-rememberme p {
+  padding-left: 2px;
+  width: 100%;
+}
+
+.input-infn-submita input {
+  border-radius: 5px;
+  background-color: #5AC8F4;
+  border: 0px solid #000;
+  padding: 4px 6px;
+}
+
+.note-function p {
+  opacity: 1;
+  font-size: 12px;
+}
+
+.note-function .note-signup {
+  padding-left: 2px;
+}
+
+.note-function .note {
+  /*font-size: 12px;*/
+  opacity: 1;
+}
+
+.note-function {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.Forgot-psw {
+  padding-top: 10px;
+}
+
+
+
+/*-------------------手機 區域css style----------------------*/
+@media screen and (max-width:767px) {
+
+  /*!!!!-----------index----------------*/
+  .item-founder-1 img,
+  .item-founder-2 img {
+    display: none;
+  }
+
+  .item-note-1 p,
+  .item-note-2 p,
+  .aboutus-addr-p {
+    display: none;
+  }
+
+  .wrap-dailylife-fake .title-dailylife p,
+  .wrap-newwork-fake .title-newwork p {
+    padding-left: 10px;
+    font-size: 12px;
+    padding-bottom: 6px;
+  }
+
+  .title-newwork {
+    padding-top: 0;
+  }
+
+  .item-note-2 {
+    padding-top: 0;
+  }
+
+  .title-dailylife {
+    padding-top: 0;
+  }
+
+  .Carousel,
+  .dailylife-more-line {
+    margin-bottom: 50px;
+  }
+
+  .wrap-dailylife-fake .title-dailylife h1,
+  .wrap-newwork-fake .title-newwork h1 {
+    padding-left: 10px;
+    font-size: 36px;
+  }
+
+  .title-dailylife h1 {
+    padding-top: 0;
+  }
+
+  .title-newwork h1,
+  .title-dailylife h1,
+  .title-aboutus h1 {
+    border-bottom: 0px solid #000;
+  }
+
+  .item-note-1 {
+    display: none;
+  }
+
+  .title-dailylife h1 {
+    text-align: left;
+  }
+
+  .dailylife-photo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .dailylife-item-photo {
+    margin-bottom: 20px;
+  }
+
+  .dailylife-item-photo img {
+    padding-bottom: 10px;
+  }
+
+  .dailylife-item-photo {
+    box-shadow: 0px 0px 0px #000;
+  }
+
+  .more-line {
+    display: none;
+  }
+
+  .dailylife-more-line {
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  .dailylife-item-more {
+    margin-bottom: 30px;
+  }
+
+  .photo-parts {
+    margin-bottom: 30px;
+  }
+
+  .aboutus-addr {
+    padding-top: 0px;
+  }
+
+  .aboutus-addr-p,
+  .aboutus-content-p {
+    font-size: 12px;
+  }
+
+  .dailylife-item-photo .photo-parts {
+    height: 50px;
+  }
+
+  .aboutus-addr-m-p {
+    margin-top: 10px;
+    border-top: 1px solid #000;
+    opacity: 0.9;
+  }
+
+  .href-icon-area {
+    text-align: center;
+  }
+
+  .dailylife-photo .item-cart img,
+  .dailylife-photo .item-like img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .dailylife-item-photo img {
+    padding-bottom: 0px;
+  }
+
+  .title-aboutus,
+  .aboutus-content-p,
+  .copyright,
+  .dailylife-more-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dailylife-photo .photo-parts {
+    position: absolute;
+    top: 0;
+  }
+
+  .dailylife-photo .photo-parts .item-cart,
+  .dailylife-photo .photo-parts .item-like {
+    display: none;
+  }
+
+  .dailylife-photo .photo-parts-m {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .5;
+  }
+
+  .dailylife-photo .photo-parts-m .item-cart,
+  .dailylife-photo .photo-parts-m .item-like {
+    width: 50%;
+    border-left: 1px solid #666;
+    background-color: #444;
+    opacity: 1;
+    padding: 6px 0px;
+    display: block;
+    text-align: center;
+    /* margin-bottom: 1px; */
+    margin: auto;
+  }
+
+  .dailylife-photo .photo-parts-m .item-icon-cart-1,
+  .dailylife-photo .photo-parts-m .item-icon-like-1 {
+    display: none;
+  }
+
+  .aboutus-content-p {
+    white-space: none;
+  }
+
+  .wrap-newwork .title-newwork .title-1,
+  .wrap-dailylife .title-dailylife .title-2,
+  .wrap-aboutus-fake {
+    display: none;
+  }
+
+
+  /*!!!!!!---------login-area------*/
+  #slide img,
+  .col-Carousel img,
+  .dailylife-item-photo img {
+    width: 100%;
+  }
+
+
+  .item-login .title {
+    text-align: center;
+  }
+
+  .item-gallery {
+    opacity: 1;
+  }
+
+
+  .item-icon-cart,
+  .item-icon-like {
+    /*position: absolute;*/
+    bottom: 0;
+  }
+
+
+  /*!!!!!!---------gallery-area------*/
+  body .gallery-ptohotype-area p {
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+  }
+
+  .gallery-ptohotype-area .photo-parts {
+    position: absolute;
+    top: 0;
+    /* bottom: 0%; */
+    /* background-color: #000; */
+    /*bottom: -100%;*/
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0px;
+    /*background-color: #ff0;*/
+    /*background-image:linear-gradient(180deg, rgba(0,0,0,0) 0%,
+                                            rgba(0,0,0,.2) 50%, 
+                                            rgba(0,0,0,0) 100%);*/
+    /*background-image:linear-gradient(90deg, rgba(0,0,0,0) 0%,
+                                           rgba(0,0,0,.8) 50%, 
+                                           rgba(0,0,0,0) 100%);*/
+    padding: 0px 6px;
+    box-sizing: border-box;
+    display: flex;
+    /*justify-content:space-between;*/
+    align-items: center;
+  }
+
+  .gallery-ptohotype-area .photo-parts .item-cart,
+  .gallery-ptohotype-area .photo-parts .item-like {
+    display: none;
+  }
+
+  .gallery-ptohotype-area .author-hp,
+  .gallery-ptohotype-area .item-cart img,
+  .gallery-ptohotype-area .item-like img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .gallery-ptohotype-area .author-hp-name p {
+    font-size: 12px;
+  }
+
+  .gallery-ptohotype-area .photo-parts-m {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: .5;
+  }
+
+  .gallery-ptohotype-area .photo-parts-m .item-cart,
+  .gallery-ptohotype-area .photo-parts-m .item-like {
+    width: 50%;
+    border-left: 1px solid #666;
+    background-color: #444;
+    opacity: 1;
+    padding: 6px 0px;
+    display: block;
+    text-align: center;
+    /* margin-bottom: 1px; */
+    margin: auto;
+  }
+
+  .gallery-ptohotype-area .photo-parts-m .item-icon-cart-1,
+  .gallery-ptohotype-area .photo-parts-m .item-icon-like-1 {
+    display: none;
+  }
+
+
+
+  /*!!!!!!---------travel-area------*/
+  .wrap-travel-cover {
+    display: none;
+  }
+
+  body .item-blog-select li {
+    font-size: 12px;
+    padding: 0px 6px;
+    margin-top: 80px;
+  }
+
+  .item-travelblog-content p {
+    font-size: 12px;
+  }
+
+  .col-travelblog {
+    margin: 0px;
+    transition: 1s;
+  }
+
+  .item-travelblog-content {
+    width: 100%;
+  }
+
+}
+
+/*------------------ TODO: 桌機 區域css style-----*/
+@media screen and (min-width:768px) {
+
+  /*------------index----------*/
+  .aboutus-addr-m-p,
+  .item-m-note-1 p,
+  .item-m-note-2 p {
+    display: none;
+  }
+
+  .wrap-dailylife-fake .title-dailylife h1,
+  .wrap-newwork-fake .title-newwork h1 {
+    border-bottom: 0px;
+    padding-left: 10px;
+  }
+
+  .wrap-dailylife-fake .title-dailylife p,
+  .wrap-newwork-fake .title-newwork p {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .wrap-aboutus-fake {
+    position: relative;
+  }
+
+  .my4-01 {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .aboutus-content-p {
+    white-space: none;
+  }
+
+  .aboutus-addr-p {
+    padding-top: 10px;
+    border-top: 1px solid #000;
+  }
+
+  .wrap-dailylife-fake .title-2 {
+    text-align: left;
+  }
+
+  .wrap-newwork,
+  .wrap-dailylife,
+  .warp-aboutus-area {
+    display: none;
+  }
+
+  .wrap-newwork-fake,
+  .wrap-dailylife-fake,
+  .wrap-aboutus-fake {
+    display: block;
+  }
+
+
+  .dailylife-more-line .more:hover {
+    color: #fff;
+    background-color: #5AC8F4;
+  }
+
+  .icon-group-fx:hover {
+    opacity: 1;
+  }
+
+  .item-gallery:hover img {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+
+  /*------------dailylife-item-photo---photo-parts------------*/
+  .dailylife-item-photo:hover .dailylife-photo-img {
+    transform: scale(1.2);
+  }
+
+  .dailylife-item-photo:hover .photo-parts {
+    bottom: 0;
+  }
+
+  .dailylife-photo .item-cart:hover .item-icon-cart,
+  .dailylife-photo .item-like:hover .item-icon-like {
+    opacity: 0;
+  }
+
+  .dailylife-photo .item-cart:hover .item-icon-cart-1,
+  .dailylife-photo .item-like:hover .item-icon-like-1 {
+    opacity: 1;
+  }
+
+  .dailylife-photo .photo-parts-m {
+    display: none;
+  }
+
+  .dailylife-photo .photo-parts .item-icon-cart,
+  .dailylife-photo .photo-parts .item-icon-like {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* ☛TODO: Gallery */
+  /*------------dailylife-item-photo---photo-parts------------*/
+  .item-gallery-ptoho:hover .photo-parts {
+    bottom: 0;
+  }
+
+  .item-gallery-ptoho:hover img {
+    transform: scale(1.2);
+  }
+
+  .gallery-ptohotype-area .item-cart:hover .item-icon-cart,
+  .gallery-ptohotype-area .item-like:hover .item-icon-like {
+    opacity: 0;
+  }
+
+  .gallery-ptohotype-area .item-cart:hover .item-icon-cart-1,
+  .gallery-ptohotype-area .item-like:hover .item-icon-like-1 {
+    opacity: 1;
+  }
+
+  .gallery-ptohotype-area .photo-parts-m {
+    display: none;
+  }
+
+
+  /* ☛TODO: Travael Blog */
+  .item-travelblog:hover .travelblog-photo {
+    /*transition: .7s;
+  transform: scale(1.1);*/
+  }
+
+  body .wrap-travel-cover {
+    background-image: url("../images/travel-bgc-2-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-position: center center;
+  }
+
+  .item-blog-select li {
+    position: relative;
+  }
+
+  /* .item-blog-select:hover li+li {
+    border-left-width: 0;
+    border-right-width: 0;
+  } */
+
+  .item-blog-select li::before,
+  .item-blog-select li::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    transition: width 1s, height 1s;
+  }
+
+  .item-blog-select li::before {
+    top: -1px;
+    left: -1px;
+  }
+
+  .item-blog-select li::after {
+    right: -1px;
+    bottom: -1px;
+  }
+
+  .item-blog-select li:hover::before,
+  .item-blog-select li:hover::after {
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    z-index: -1;
+  }
+
+  .item-blog-select li:hover::before {
+    /* 1px solid #aaa; #1AF7CC*/
+    border-top: 1px solid #AAA;
+    border-left: 1px solid #AAA;
+  }
+
+  .item-blog-select li:hover::after {
+    border-bottom: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+  }
+
+  .select-group:hover,
+  .btn-page:hover,
+  .item-blog-select li:hover::before {
+    background-color: #5AC8F4;
+  }
+
+  .select-group:hover a,
+  .btn-page:hover,
+  .item-blog-select li:hover a {
+    color: #FFF;
+  }
+
+  body .col-travelblog {
+    position: relative;
+    top: 0;
+    transition: all .5s ease .1s;
+    box-shadow: 1px 5px 3px #aaa;
+  }
+
+  .item-travel-content h1 {
+    font-size: 48px;
+  }
+
+  .item-travel-content {
+    padding-top: 40%;
+  }
+
+  .col-travelblog:hover {
+    top: -10px;
+    transition: all .5s ease-in-out .1s;
+    box-shadow: 0 3px 1px rgba(150, 150, 150, 0.5),
+      0 4px 3px rgba(125, 125, 125, 0.5),
+      0 5px 5px rgba(100, 100, 100, 0.5),
+      0 6px 7px rgba(75, 75, 75, 0.5),
+      0 7px 10px rgba(50, 50, 50, 0.5);
+  }
+
+  .col-travelblog:hover .travelblog-photo {
+    transform: scale(1.2);
+  }
+
+  /* .col-travelblog{
+    
+    box-shadow: 0px 1px 0px #ccc,
+           0px 2px 0px #bbb,
+           0px 3px 0px #aaa,
+           0px 4px 0px #999,
+           0px 5px 0px #888,
+           0px 6px 0px #777,
+           0px 7px 0px #666,
+           0px 8px 0px #555,
+           0px 9px 0px #444,
+           0px 9px 10px #444;
+    }
+  .col-travelblog:hover{
+    position: relative;
+    top: 0;
+    top: 5px;
+    box-shadow: 0px 1px 0px #bbb,
+                 0px 2px 0px #999,
+                 0px 3px 0px #777,
+                 0px 4px 0px #555,
+                 0px 4px 10px #444;
+    }
+*/
+
+}
+
+
+/*@media screen and (min-width:945px){
+ .col-travelblog{
+    display: none;
+  }
+  .item-travelblog-content {
+    width: 100%;
+  }
+
+}*/
+
+@media screen and (min-width:946px) {
+  .col-travelblog {
+    display: flex;
+  }
+
+  .item-travel-content h1 {
+    font-size: 60px;
+  }
+
+  .item-travelblog-content {
+    width: 50%;
+  }
+
+  .travel-more:hover .travel-a-more {
+    background-color: #5AC8F4;
+    color: #fff;
+  }
+
+
+}
+
+@media screen and (min-width:1119px) {
+  /*.bgi-white{
+    max-width: 1200px;
+    margin: auto;
+    background-image: none;
+    box-shadow: 0px 1px 2px #000;
+  }*/
+
+}
+
+@media screen and (min-width:1200px) {
+
+  /*------------------首頁背影圖---------------*/
+  body .bgi {
+    max-width: 1200px;
+    margin: auto;
+    background-image: url("../images/bgc-1200x2600-white.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position-y:center;*/
+    box-shadow: 0px 0px 5px #000;
+  }
+
+  body .wrap-travel-cover {
+    padding: 0;
+    background-image: url("../images/travel-bgc-1-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    margin-bottom: 20px;
+  }
+
+  body .col-travelblog {
+    box-shadow: 2px 3px 4px #aaa;
+  }
+
+  /*!!!!!!--------index-----------*/
+  .item-founder-1 img {
+    display: block;
+  }
+
+  .wrap-newwork,
+  .wrap-dailylife,
+  .warp-aboutus-area {
+    display: block;
+  }
+
+  .wrap-newwork-fake,
+  .wrap-dailylife-fake,
+  .wrap-aboutus-fake {
+    display: none;
+  }
+
+  .aboutus-addr-p {
+    padding-top: 0px;
+    border-top: 0px solid #000;
+  }
+
+
+}

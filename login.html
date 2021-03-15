@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="icon" type="image/png" href="images/WalkerGeneLogo-01.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/aos.css">
+
+	<style>
+		.login .href-model-fontB,
+		.login .href-model-fontS {
+			opacity: 1;
+		}
+
+		@media screen and (max-width: 767px) {
+			.nav-btn.login {
+				background-color: #1AF7CC;
+			}
+		}
+
+		/* body{
+			width: 100vw;
+			background-image:url("images/login-bgc.jpg");
+			background-attachment: fixed;
+			background-position:center center; 
+			background-repeat: no-repeat;
+			/*min-height: 300px;*/
+		/* } */
+		.nav-icon-1 {
+			opacity: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<!--------------- navbar start---------------------------->
+	<nav div
+		 class="navbar">
+		<ul>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/WalkerGeneLogo-01.png"
+						 alt="logo">
+				</a>
+			</div>
+			<div class="nav-btn-m search">
+				<div class="search-icon-mark"></div>
+				<label for="">
+					<input class="seearch-input-m"
+						   type="text"
+						   placeholder="google">
+				</label>
+			</div>
+			<div class="nav-function nav-function1 inactive">
+				<li class="nav-btn gallery">
+					<a href="gallery.html">
+						<div class="wrap-href-model">
+							<div class="href-model">
+								<p class="href-model-fontB">G</p>
+							</div>
+							<p class="href-model-fontS">Gallery</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn travel">
+					<a href="travel.html">
+						<div class="wrap-href-model">
+							<div class="href-model">
+								<p class="href-model-fontB">T</p>
+							</div>
+							<p class="href-model-fontS">Travel</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn search">
+					<div class="wrap-href-model">
+						<div class="href-model">
+							<!-- <p class="href-model-fontB">S</p> -->
+							<div class="search-icon-mark"></div>
+						</div>
+						<!-- <div class="search-expand"></div> -->
+						<p class="href-model-fontS">Search</p>
+						<label for="">
+							<input type="text"
+								   placeholder="google"
+								   onmouseleave="this.value=''">
+						</label>
+					</div>
+				</li>
+				<li class="nav-btn nav-btn1 login">
+					<a href="login.html">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-login-300x300.png"
+								 alt="icon-login-300x300.png"
+								 class="nav-icon nav-icon-1">
+							<img src="images/icon-login-300x300-1.png"
+								 alt="icon-login-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-1">
+							<p class="href-model-fontS login-after">Login</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn nav-btn1 cart">
+					<a href="#">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-cart-300x300.png"
+								 alt="icon-cart-300x300.png"
+								 class="nav-icon nav-icon-2">
+							<img src="images/icon-cart-300x300-1.png"
+								 alt="icon-cart-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-2">
+							<p class="href-model-fontS login-after">Cart</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn nav-btn1 upload">
+					<a href="#">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-upload-300x300.png"
+								 alt="icon-upload-300x300.png"
+								 class="nav-icon nav-icon-3">
+							<img src="images/icon-upload-300x300-1.png"
+								 alt="icon-upload-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-3">
+							<p class="href-model-fontS login-after">Upload</p>
+						</div>
+					</a>
+				</li>
+			</div>
+			<div class="hb-skin-DPN">
+				<div class="hb-skin">
+					<span class="hb hb1"></span>
+					<span class="hb hb2"></span>
+					<span class="hb hb3"></span>
+				</div>
+			</div>
+		</ul>
+
+		<!-- <div lass="search-area">
+		<form class="form-inline">
+	      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-submit" type="submit">Search</button>
+		</form>
+	</div> -->
+		<!-- <li class="nav-btn space"></li> -->
+		<!-- <input type="checkbox" id="menu-control" name="menu-control">
+	<label class="hamber" for="menu-control"> -->
+	</nav>
+	<!--------------- navbar End---------------------------->
+
+	<!---------------- BGI - start------------>
+
+	<div class="login-area">
+		<div class="container">
+			<!-- <div class="col-3 ">
+				<div class="space space-absol"></div>
+			</div> -->
+			<div class="col-6 col-md-12 center"
+				 id="login-center">
+				<div class="item item-login"
+					 data-aos="zoom-in"
+					 data-aos-anchor="#login-center">
+					<form>
+						<div class="title">
+							<h3>Login to Walker Gene</h3>
+						</div>
+						<div class="form-account">
+							<h5>Email</h5>
+							<div class="input-infn-accountenter">
+								<input type="text"
+									   name="account"
+									   placeholder="Enter your email">
+							</div>
+						</div>
+
+						<div class="form-password">
+							<h5>Password</h5>
+							<div class="input-infn-passwordenter">
+								<input type="text"
+									   name="account"
+									   placeholder="Enter your password">
+							</div>
+						</div>
+
+						<div class="form-rememberme">
+							<input type="checkbox"
+								   name="rememberme"
+								   value="rememberme"
+								   checked>
+							<p>Remember Me</p>
+						</div>
+
+						<div class="input-infn-submita">
+							<input type="submit"
+								   value="Login">
+						</div>
+						<div class="forgetpassword"></div>
+						<div class="note-function">
+							<p>Don't have an account?<a href="#"
+								   class="note-signup">Sign up</a></p>
+							<a href="#">
+								<p class="Forgot-psw note">Forgot password?</p>
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+			<!-- <div class="col-3 ">
+				<div class="space space-absol"></div>
+			</div> -->
+		</div>
+	</div>
+
+
+
+	<!-- TODO: JS Plugin -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+		// js 垂直置中
+		$(document).ready(function () {
+			moveCenter();
+
+			$(window).resize(function () {
+				moveCenter();
+			});
+
+			function moveCenter() {
+				var winWidth = $(window).width();
+				var winHeight = $(window).height();
+
+				var divWidth = $('#login-center').width();
+				var divHeight = $('#login-center').height();
+
+				$('#login-center').css({
+					left: (winWidth - divWidth) / 2,
+					top: (winHeight - divHeight) / 2,
+				});
+				// if (window.screen.width <= 767) {
+				// 	$('#login-center').css({
+				// 		left: (winWidth - divWidth) / 2,
+				// 		top: (winHeight - divHeight) / 2+71, // 加上navbar 71px
+				// 	});
+				// } else {
+				// 	$('#login-center').css({
+				// 		left: (winWidth - divWidth) / 2,
+				// 		top: (winHeight - divHeight) / 2,
+				// 	});
+				// }
+			}
+		});
+	</script>
+
+
+</body>
+
+</html>

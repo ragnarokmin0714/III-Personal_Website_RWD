@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Travel</title>
+	<link rel="icon" type="image/png" href="images/WalkerGeneLogo-01.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/aos.css">
+
+	<style>
+		/*.shop .href-model-fontS{
+			border-bottom: 1px solid #000;
+		}
+		.shop .href-model{
+	background-image:linear-gradient(60deg, rgba(25,255,255,1) 0px,  rgba(255,253,177,1) 94px);
+		}*/
+
+		.travel .href-model-fontB,
+		.travel .href-model-fontS {
+			opacity: 1;
+		}
+
+		@media screen and (max-width: 767px) {
+			.nav-btn.travel {
+				background-color: #1AF7CC;
+			}
+		}
+	</style>
+</head>
+
+<body id="id-travel">
+	<!--------------- navbar start---------------------------->
+	<nav class="navbar">
+		<ul>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/WalkerGeneLogo-01.png"
+						 alt="logo">
+				</a>
+			</div>
+			<div class="nav-btn-m search">
+				<div class="search-icon-mark"></div>
+				<label for="">
+					<input class="seearch-input-m"
+						   type="text"
+						   placeholder="google">
+				</label>
+			</div>
+			<div class="nav-function nav-function1 inactive">
+				<li class="nav-btn gallery">
+					<a href="gallery.html">
+						<div class="wrap-href-model">
+							<div class="href-model">
+								<p class="href-model-fontB">G</p>
+							</div>
+							<p class="href-model-fontS">Gallery</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn travel">
+					<a href="travel.html">
+						<div class="wrap-href-model">
+							<div class="href-model">
+								<p class="href-model-fontB">T</p>
+							</div>
+							<p class="href-model-fontS">Travel</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn search">
+					<div class="wrap-href-model">
+						<div class="href-model">
+							<!-- <p class="href-model-fontB">S</p> -->
+							<div class="search-icon-mark"></div>
+						</div>
+						<!-- <div class="search-expand"></div> -->
+						<p class="href-model-fontS">Search</p>
+						<label for="">
+							<input type="text"
+								   placeholder="google"
+								   onmouseleave="this.value=''">
+						</label>
+					</div>
+				</li>
+				<li class="nav-btn nav-btn1 login">
+					<a href="login.html">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-login-300x300.png"
+								 alt="icon-login-300x300.png"
+								 class="nav-icon nav-icon-1">
+							<img src="images/icon-login-300x300-1.png"
+								 alt="icon-login-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-1">
+							<p class="href-model-fontS login-after">Login</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn nav-btn1 cart">
+					<a href="#">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-cart-300x300.png"
+								 alt="icon-cart-300x300.png"
+								 class="nav-icon nav-icon-2">
+							<img src="images/icon-cart-300x300-1.png"
+								 alt="icon-cart-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-2">
+							<p class="href-model-fontS login-after">Cart</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn nav-btn1 upload">
+					<a href="#">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-upload-300x300.png"
+								 alt="icon-upload-300x300.png"
+								 class="nav-icon nav-icon-3">
+							<img src="images/icon-upload-300x300-1.png"
+								 alt="icon-upload-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-3">
+							<p class="href-model-fontS login-after">Upload</p>
+						</div>
+					</a>
+				</li>
+			</div>
+			<div class="hb-skin-DPN">
+				<div class="hb-skin">
+					<span class="hb hb1"></span>
+					<span class="hb hb2"></span>
+					<span class="hb hb3"></span>
+				</div>
+			</div>
+		</ul>
+
+		<!-- <div lass="search-area">
+		<form class="form-inline">
+	      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-submit" type="submit">Search</button>
+		</form>
+	</div> -->
+		<!-- <li class="nav-btn space"></li> -->
+		<!-- <input type="checkbox" id="menu-control" name="menu-control">
+	<label class="hamber" for="menu-control"> -->
+	</nav>
+	<!--------------- navbar End---------------------------->
+
+
+	<!-- -----------travel-cover-------- -->
+	<div class="wrap wrap-travel-cover"
+		 data-aos="zoom-in"
+		 data-aos-anchor=".wrap-travel-cover"
+		 data-aos-duration="1000">
+		<div class="col-3">
+			<div class="space"></div>
+		</div>
+		<div class="col-6 col-md-12 col-travel-cover">
+			<div class="item item-travel-cover">
+				<div class="item-travel-content"
+					 data-aos="fade-up"
+					 data-aos-anchor=".wrap-travel-cover"
+					 data-aos-delay="500"
+					 data-aos-duration="1500">
+					<h1>
+						Misty mountains and long grass
+					</h1>
+					<div class="travel-cover-p">
+						<p>
+							Published by
+							<a href="#">Sarah Robinson</a>
+							• 3 hours ago
+						</p>
+						<p>
+							Discover some of the best photos on WalkerGene today in this week's Editors' Choice.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="space"></div>
+		</div>
+	</div>
+
+	<!---------------- BGI - start------------>
+	<div class="bgi-white">
+
+		<!-- --------------- blog-select -------------- -->
+		<div class="container .container-blog-select"
+			 data-aos="fade-down"
+			 data-aos-anchor=".container-blog-select"
+			 data-aos-delay="500"
+			 data-aos-duration="1500">
+			<div class="col-12 col-md-12">
+				<div class="item-blog-select">
+					<ul>
+						<li class="li-blog-select atteaction"><a href="#"> Attraction</li></a>
+						<li class="li-blog-select food"><a href="#"> Food</li></a>
+						<li class="li-blog-select living"><a href="#"> Living</li></a>
+						<li class="li-blog-select traffic"><a href="#"> Traffic</li></a>
+						<li class="li-blog-select shopping"><a href="#"> Shopping</li></a>
+						<li class="li-blog-select all"><a href="#"> All</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- --------------- blog-start -------------- -->
+		<div class="container container-travelblog"
+			 data-aos="fade-down"
+			 data-aos-anchor=".container-travelblog"
+			 data-aos-delay="600"
+			 data-aos-duration="1500">
+			<div class="col-1">
+				<div class="space"></div>
+			</div>
+			<div class="col-10 col-md-12 col-travelblog">
+				<div class="item item-travelblog">
+					<a href="#">
+						<img src="images/travelblog-photo-1-1.jpg"
+							 alt="travel-photo-1.jpg"
+							 class="travelblog-photo">
+					</a>
+				</div>
+				<div class="item item-travelblog-content">
+					<h3>An old friend</h3>
+					<p> Published by
+						<a href="#">Kilian Schoenberger</a>
+						• 3 hours ago
+					</p>
+					<p class="travelblog-content-p">
+						Some trees are like old friends to me.
+						I keep paying you a visit. Often months,
+						but sometimes several years until you see again.
+						But when I get on my way, I feel an inner tension.
+						<span class="travel-more">
+							<a href="#"
+							   class="travel-a-more">more</a>
+						</span>
+					</p>
+
+				</div>
+			</div>
+			<div class="col-1">
+				<div class="space"></div>
+			</div>
+		</div>
+		<div class="container container-travelblog"
+			 data-aos="fade-down"
+			 data-aos-anchor=".container-travelblog"
+			 data-aos-delay="700"
+			 data-aos-duration="1500">
+			<div class="col-1">
+				<div class="space"></div>
+			</div>
+			<div class="col-10 col-md-12 col-travelblog">
+				<div class="item item-travelblog">
+					<a href="#">
+						<img src="images/travelblog-photo-2-1.jpg"
+							 alt="travel-photo-1.jpg"
+							 class="travelblog-photo">
+					</a>
+				</div>
+				<div class="item item-travelblog-content">
+					<h3>Castle Dreams</h3>
+					<p> Published by
+						<a href="#">Kilian Schoenberger</a>
+						• 3 hours ago
+					</p>
+					<p class="travelblog-content-p">
+						While driving around on a foggy morning suddenly
+						the outline of a castle appeared in front of me.
+						Silently the towers and walls became appearant.
+						Quietly I was watching the drama.
+						<span class="travel-more">
+							<a href="#"
+							   class="travel-a-more">more</a>
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="col-1">
+				<div class="space"></div>
+			</div>
+		</div>
+		<div class="container container-travelblog"
+			 data-aos="fade-down"
+			 data-aos-anchor=".container-travelblog"
+			 data-aos-delay="800"
+			 data-aos-duration="1500">
+			<div class="col-1">
+				<div class="space"></div>
+			</div>
+			<div class="col-10 col-md-12 col-travelblog">
+				<div class="item item-travelblog">
+					<a href="#">
+						<img src="images/travelblog-photo-3-1.jpg"
+							 alt="travel-photo-1.jpg"
+							 class="travelblog-photo">
+					</a>
+				</div>
+				<div class="item item-travelblog-content">
+					<h3>Frozen Realm</h3>
+					<p> Published by
+						<a href="#">Kilian Schoenberger</a>
+						• 3 hours ago
+					</p>
+					<p class="travelblog-content-p">
+						Two weeks ago I was visiting the Blatic Sea to
+						capture the frozen lighthouse on the island Rügen.
+						Since seascape are normally not my core subjects I
+						was excited how I will get along with the conditions.
+
+						<span class="travel-more">
+							<a href="#"
+							   class="travel-a-more">more</a>
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="col-1">
+				<div class="space"></div>
+			</div>
+		</div>
+		<div class="container container-travelblog"
+			 data-aos="fade-down"
+			 data-aos-anchor=".container-travelblog"
+			 data-aos-delay="900"
+			 data-aos-duration="1500">
+			<div class="col-1">
+				<div class="space"></div>
+			</div>
+			<div class="col-10 col-md-12 col-travelblog">
+				<div class="item item-travelblog">
+					<a href="#">
+						<img src="images/travelblog-photo-4-1.jpg"
+							 alt="travel-photo-1.jpg"
+							 class="travelblog-photo">
+					</a>
+				</div>
+				<div class="item item-travelblog-content">
+					<h3>End of Winter</h3>
+					<p> Published by
+						<a href="#">Kilian Schoenberger</a>
+						• 3 hours ago
+					</p>
+					<p class="travelblog-content-p">
+						Last snow around the ruins of castle Neideck,
+						Franconian Switzerland, a nice rocky landscape
+						not far from Nuremberg...
+						have a beautiful weekend.
+
+						<span class="travel-more">
+							<a href="#"
+							   class="travel-a-more">more</a>
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="col-1">
+				<div class="space"></div>
+			</div>
+		</div>
+
+		<!-- --------------- blog-end -------------- -->
+		<div class="container container-page-btn">
+			<div class="col-12 col-md-12">
+				<div class="item item-page-btn"
+					 data-aos="fade-down"
+					 data-aos-anchor=".container-travelblog"
+					 data-aos-delay="1000"
+					 data-aos-duration="1500">
+					<a href="#"
+					   class="btn-page">1</a>
+					<a href="#"
+					   class="btn-page">2</a>
+					<a href="#"
+					   class="btn-page">3</a>
+					<a href="#"
+					   class="btn-page">4</a>
+					<a href="#"
+					   class="btn-page">5</a>
+					<a href="#"
+					   class="btn-page">6</a>
+					<a href="#"
+					   class="btn-page1">....</a>
+					<a href="#"
+					   class="btn-page">12</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+	<!-- TODO: JS Plugin -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+
+</html>

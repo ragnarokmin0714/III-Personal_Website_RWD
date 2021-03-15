@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gallery</title>
+	<link rel="icon" type="image/png" href="images/WalkerGeneLogo-01.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/aos.css">
+
+	<style>
+		.gallery .href-model-fontB,
+		.gallery .href-model-fontS {
+			opacity: 1;
+		}
+
+		@media screen and (max-width: 767px) {
+			.nav-btn.gallery {
+				background-color: #1AF7CC;
+			}
+		}
+	</style>
+</head>
+
+<body id="bgc-gallery">
+	<!--------------- navbar start---------------------------->
+	<nav class="navbar">
+		<ul>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/WalkerGeneLogo-01.png"
+						 alt="logo">
+				</a>
+			</div>
+			<div class="nav-btn-m search">
+				<div class="search-icon-mark"></div>
+				<label for="">
+					<input class="seearch-input-m"
+						   type="text"
+						   placeholder="google">
+				</label>
+			</div>
+			<div class="nav-function nav-function1 inactive">
+				<li class="nav-btn gallery">
+					<a href="gallery.html">
+						<div class="wrap-href-model">
+							<div class="href-model">
+								<p class="href-model-fontB">G</p>
+							</div>
+							<p class="href-model-fontS">Gallery</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn travel">
+					<a href="travel.html">
+						<div class="wrap-href-model">
+							<div class="href-model">
+								<p class="href-model-fontB">T</p>
+							</div>
+							<p class="href-model-fontS">Travel</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn search">
+					<div class="wrap-href-model">
+						<div class="href-model">
+							<!-- <p class="href-model-fontB">S</p> -->
+							<div class="search-icon-mark"></div>
+						</div>
+						<!-- <div class="search-expand"></div> -->
+						<p class="href-model-fontS">Search</p>
+						<label for="">
+							<input type="text"
+								   placeholder="google"
+								   onmouseleave="this.value=''">
+						</label>
+					</div>
+				</li>
+				<li class="nav-btn nav-btn1 login">
+					<a href="login.html">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-login-300x300.png"
+								 alt="icon-login-300x300.png"
+								 class="nav-icon nav-icon-1">
+							<img src="images/icon-login-300x300-1.png"
+								 alt="icon-login-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-1">
+							<p class="href-model-fontS login-after">Login</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn nav-btn1 cart">
+					<a href="#">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-cart-300x300.png"
+								 alt="icon-cart-300x300.png"
+								 class="nav-icon nav-icon-2">
+							<img src="images/icon-cart-300x300-1.png"
+								 alt="icon-cart-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-2">
+							<p class="href-model-fontS login-after">Cart</p>
+						</div>
+					</a>
+				</li>
+				<li class="nav-btn nav-btn1 upload">
+					<a href="#">
+						<div class="wrap-href-model wrap-href-model1">
+							<img src="images/icon-upload-300x300.png"
+								 alt="icon-upload-300x300.png"
+								 class="nav-icon nav-icon-3">
+							<img src="images/icon-upload-300x300-1.png"
+								 alt="icon-upload-300x300.png"
+								 class="nav-icon-fx nav-icon-fx-3">
+							<p class="href-model-fontS login-after">Upload</p>
+						</div>
+					</a>
+				</li>
+			</div>
+			<div class="hb-skin-DPN">
+				<div class="hb-skin">
+					<span class="hb hb1"></span>
+					<span class="hb hb2"></span>
+					<span class="hb hb3"></span>
+				</div>
+			</div>
+		</ul>
+
+		<!-- <div lass="search-area">
+		<form class="form-inline">
+	      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-submit" type="submit">Search</button>
+		</form>
+	</div> -->
+		<!-- <li class="nav-btn space"></li> -->
+		<!-- <input type="checkbox" id="menu-control" name="menu-control">
+	<label class="hamber" for="menu-control"> -->
+	</nav>
+	<!--------------- navbar End---------------------------->
+
+	<!---------------- BGI - start------------>
+
+	<!-- clear nav 上空的空間 -->
+	<div class="space-top"></div>
+
+	<!-- Start - ov-h -->
+	<div class="ov-h">
+
+		<div class="container gallery-title-area"
+			 data-aos="fade-right"
+			 data-aos-anchor=".gallery-title-area">
+			<div class="col-12 col-md-12">
+				<h1>Phototype</h1>
+				<p>The top photo, chosen by you.</p>
+				<!-- <div class="item-decoration_2"></div> -->
+			</div>
+		</div>
+
+		<div class="container gallery-ptohotype-area">
+			<div class="col-3 col-md-3">
+				<div class="item item-gallery item-gallery-1"
+					 data-aos="zoom-in-down"
+					 data-aos-anchor=".gallery-ptohotype-area">
+					<img src="images/gallery-pt-place.jpg"
+						 alt="gallery-pt-place.jpg">
+					<div class="phototype-p">
+						<p>PLACE</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 col-md-3">
+				<div class="item item-gallery item-gallery-2"
+					 data-aos="zoom-in-down"
+					 data-aos-anchor=".gallery-ptohotype-area">
+					<img src="images/gallery-pt-people.jpg"
+						 alt="gallery-pt-people.jpg">
+					<div class="phototype-p">
+						<p>PEOPLE</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 col-md-3">
+				<div class="item item-gallery item-gallery-3"
+					 data-aos="zoom-in-down"
+					 data-aos-anchor=".gallery-ptohotype-area">
+					<img src="images/gallery-pt-nature.jpg"
+						 alt="gallery-pt-nature.jpg">
+					<div class="phototype-p">
+						<p>NATURE</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3 col-md-3">
+				<div class="item item-gallery item-gallery-4"
+					 data-aos="zoom-in-down"
+					 data-aos-anchor=".gallery-ptohotype-area">
+					<img src="images/gallery-pt-all.jpg"
+						 alt="gallery-pt-all.jpg">
+					<div class="phototype-p">
+						<p>ALL</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container gallery-select-area">
+			<div class="col-4 col-md-12 col-gallery-select">
+				<div class="item item-gallery-select">
+					<div class="select-group select-popular note active">
+						<a href="#">Popular</a>
+					</div>
+					<div class="select-group select-upcoming note">
+						<a href="#">Upcoming</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-8 col-md-12">
+				<div class="space"></div>
+			</div>
+		</div>
+
+	</div> <!-- End - ov-h -->
+
+	<div class="container gallery-ptohotype-area">
+		<!-- <div class="item-decoration_3"></div> -->
+		<!-- <div class="col-4 col-md-12 col-gallery-select">
+			<div class="item item-gallery-select">
+				<div class="select-group select-popular note">
+					<a href="#">Popular</a>
+				</div>
+				<div class="select-group select-upcoming note">
+					<a href="#">Upcoming</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-8 col-md-12">
+			<div class="space"></div>
+		</div>
+		<div class="clearfix"></div> -->
+
+		<div class="col-6 col-md-12 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="off">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="600"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-1-1.jpg"
+						 alt="g-photo-1-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 col-md-6 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="on">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="600"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-2-1.jpg"
+						 alt="g-photo-2-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 col-md-6 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="on">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="600"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-3-1.jpg"
+						 alt="g-photo-3-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ------------------------ -->
+	<div class="container gallery-ptohotype-area">
+
+		<div class="col-3 col-md-6 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="on">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="700"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-5-1.jpg"
+						 alt="g-photo-5-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 col-md-6 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="on">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="700"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-6-1.jpg"
+						 alt="g-photo-6-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-12 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="off">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="700"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-4-1.jpg"
+						 alt="g-photo-4-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+	</div>
+	<!-- ----- -->
+	<div class="container gallery-ptohotype-area">
+		<div class="col-6 col-md-12 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="off">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="800"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-7-1.jpg"
+						 alt="g-photo-7-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 col-md-6 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="on">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="800"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-8-1.jpg"
+						 alt="g-photo-8-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 col-md-6 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="on">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="800"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-9-1.jpg"
+						 alt="g-photo-9-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ------------------------ -->
+	<div class="container gallery-ptohotype-area">
+
+		<div class="col-3 col-md-6 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="on">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="900"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-10-1.jpg"
+						 alt="g-photo-10-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-3 col-md-6 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="on">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="900"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-11-1.jpg"
+						 alt="g-photo-11-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-12 col-gallery-photo"
+			 data-select-popular="on"
+			 data-select-upcoming="off">
+			<div class="item item-gallery-ptoho"
+				 data-aos="flip-left"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="900"
+				 data-aos-duration="1500">
+				<a href="#">
+					<img class="gallery-photo"
+						 src="images/g-photo-12-1.jpg"
+						 alt="g-photo-12-1.jpg">
+				</a>
+				<div class="photo-parts">
+					<div class="author-hp">
+						<a href="#">
+							<img src="images/hp-1.jpg"
+								 alt="hp-1.jpg">
+						</a>
+					</div>
+					<div class="author-hp-name">
+						<a href="#">
+							<p>John Wilhelm</p>
+						</a>
+					</div>
+					<div class="space-grow"></div>
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+				<div class="photo-parts-m">
+					<div class="item-cart">
+						<a href="#">
+							<img src="images/icon-cart.png"
+								 alt="icon-cart.png"
+								 CLASS="item-icon-cart">
+							<img src="images/icon-cart-1.png"
+								 alt="icon-cart-1.png"
+								 CLASS="item-icon-cart-1">
+						</a>
+					</div>
+					<div class="item-like">
+						<img src="images/icon-like.png"
+							 alt="icon-like.png"
+							 CLASS="item-icon-like">
+						<img src="images/icon-like-1.png"
+							 alt="icon-like-1.png"
+							 CLASS="item-icon-like-1">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+	</div>
+
+
+
+	<!-- <div class="container loading-area-1">
+		<div class="col-10">
+			<div class="space"></div>
+		</div>
+		<div class="col-1 col-md-12">
+			<div class="loading note">
+				Loading
+				<div class="loading-line"></div>
+			</div>
+		</div>
+		<div class="col-1">
+			<div class="space"></div>
+		</div>
+	</div> -->
+
+	<!-- --------------- blog-end -------------- -->
+	<div class="container container-page-btn">
+		<div class="col-12 col-md-12">
+			<div class="item item-page-btn"
+				 data-aos="fade-up"
+				 data-aos-anchor=".col-gallery-photo"
+				 data-aos-delay="1000"
+				 data-aos-duration="1500">
+				<a href="#"
+				   class="btn-page">1</a>
+				<a href="#"
+				   class="btn-page">2</a>
+				<a href="#"
+				   class="btn-page">3</a>
+				<a href="#"
+				   class="btn-page">4</a>
+				<a href="#"
+				   class="btn-page">5</a>
+				<a href="#"
+				   class="btn-page">6</a>
+				<a href="#"
+				   class="btn-page1">....</a>
+				<a href="#"
+				   class="btn-page">12</a>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-------------------------- hamber JS ----------------->
+	<!-- TODO: JS Plugin -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/common.js"></script>
+
+	<!-- <script type="text/javascript">
+	$(".hb-skin").click(function() {
+	
+		$(".nav-function").toggleClass(function () {
+  			return $(this).is('.active, .inactive') ? 'active inactive' : 'active';
+		});
+		$(".hb").toggleClass(function () {
+  			return $(this).is('.open, .close') ? 'open close' : 'open';
+		});
+	});	
+
+</script> -->
+
+
+
+</body>
+
+</html>
